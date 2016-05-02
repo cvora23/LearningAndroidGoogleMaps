@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ground_overlay"
+        android:title="Ground Overlay Example" />
+    <item
+        android:id="@+id/tile_overlay"
+        android:title="Tile Overlay Example" />
+
+</menu>
