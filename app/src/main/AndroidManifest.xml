@@ -51,7 +51,14 @@
         <activity android:name=".Chapter123.MapLiteMode" />
         <activity android:name=".Chapter123.Chapter4.AddingMarkerToMap" />
         <activity android:name=".Chapter123.Chapter4.CreateInfoWindowForMarkerOnMap" />
-        <activity android:name=".Chapter123.Chapter4.PolylinePolygonCircleShapesOnMap"></activity>
+        <activity android:name=".Chapter123.Chapter4.PolylinePolygonCircleShapesOnMap" />
+        <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.MapUIControlsActivity" />
+        <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.MapUiControlCustomApplication" />
+        <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.UI_Controls_Gestures_Using_XML" />
+        <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.UI_Controls_Gestures_Using_GoogleMapOptions" />
+        <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.MapEventsActivity" />
+        <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.GoogleMapsProjectionClass" />
+        <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.AddingRemovingMarkersOnMap"></activity>
     </application>
 
 </manifest>
