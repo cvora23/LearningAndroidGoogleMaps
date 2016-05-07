@@ -58,7 +58,14 @@
         <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.UI_Controls_Gestures_Using_GoogleMapOptions" />
         <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.MapEventsActivity" />
         <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.GoogleMapsProjectionClass" />
-        <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.AddingRemovingMarkersOnMap"></activity>
+        <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.AddingRemovingMarkersOnMap" />
+        <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.CameraView_ZoomLevel_Activity" />
+        <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.CameraView_CameraPosition_Activity" />
+        <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.CameraView_CameraPositon2_Activity" />
+        <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.CamerView_SettingBoundaries" />
+        <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.Panning_Map_Activity" />
+        <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.AnimatingCamera_Activity" />
+        <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.MapPadding_Activity"></activity>
     </application>
 
 </manifest>

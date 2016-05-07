@@ -1,20 +1,22 @@
-package cvora.learningandroidgooglemaps.Chapter123.Chapter5_InteractingWithMaps;
+package cvora.learningandroidgooglemaps.Chapter123.Chapter6_WorkingWithCustomViews;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.pm.PackageManager;
-import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import cvora.learningandroidgooglemaps.R;
 
-public class MapUIControlsActivity extends Activity implements OnMapReadyCallback {
+public class MapPadding_Activity extends AppCompatActivity implements OnMapReadyCallback {
 
     int requestCode1 = 1;
     int requestCode2 = 2;
@@ -22,17 +24,16 @@ public class MapUIControlsActivity extends Activity implements OnMapReadyCallbac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zoom_controls_map);
-
+        setContentView(R.layout.activity_map_padding_);
         MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
 
     @Override
-    public void onMapReady(GoogleMap googleMap) {
+    public void onMapReady(final GoogleMap map) {
 
-        googleMap.getUiSettings().setZoomControlsEnabled(true);
-        googleMap.getUiSettings().setCompassEnabled(true);
+        LatLng center = map.getCameraPosition().target;
+        map.addMarker(new MarkerOptions().position(center));
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
@@ -44,23 +45,18 @@ public class MapUIControlsActivity extends Activity implements OnMapReadyCallbac
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},requestCode1);
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},requestCode2);
         }
-        googleMap.setMyLocationEnabled(true);
-        googleMap.getUiSettings().setMyLocationButtonEnabled(true);
-        googleMap.setOnMyLocationButtonClickListener(new GoogleMap.OnMyLocationButtonClickListener(){
+        map.setMyLocationEnabled(true);
+        map.getUiSettings().setZoomControlsEnabled(true);
+        map.setPadding(400, 100, 100, 0);
+        map.setOnMapLongClickListener(new  GoogleMap.OnMapLongClickListener() {
             @Override
-            public boolean onMyLocationButtonClick() {
-                Toast.makeText(getApplicationContext(),"Location Button clicked",Toast.LENGTH_LONG).show();
-                return false;
+            public void onMapLongClick(LatLng latLng) {
+                LatLng center = map.getCameraPosition().target;
+                map.addMarker(new  MarkerOptions().position(center).icon(BitmapDescriptorFactory. defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+
             }
         });
-        googleMap.getUiSettings().setIndoorLevelPickerEnabled(false);
-        googleMap.getUiSettings().setMapToolbarEnabled(false);
 
-        // controlling gestures on map
-        googleMap.getUiSettings().setZoomGesturesEnabled(false);
-        googleMap.getUiSettings().setScrollGesturesEnabled(false);
-        googleMap.getUiSettings().setTiltGesturesEnabled(false);
-        googleMap.getUiSettings().setRotateGesturesEnabled(false);
     }
 
     @Override
