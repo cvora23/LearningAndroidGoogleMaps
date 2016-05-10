@@ -65,7 +65,51 @@
         <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.CamerView_SettingBoundaries" />
         <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.Panning_Map_Activity" />
         <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.AnimatingCamera_Activity" />
-        <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.MapPadding_Activity"></activity>
+        <activity android:name=".Chapter123.Chapter6_WorkingWithCustomViews.MapPadding_Activity" />
+        <activity android:name=".Chapter123.Chapter7_WorkingWithLocationData.AndroidLocationApi_Activity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Chapter123.Chapter7_WorkingWithLocationData.GoogleLocation_GetLastKnowLocation_Activity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Chapter123.Chapter7_WorkingWithLocationData.GoogleLocationApi_LocatIonUpdates_Activity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Chapter123.Chapter7_WorkingWithLocationData.GoogleLocation_WorkingWithGeofences_Activity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <service
+            android:name=".Chapter123.Chapter7_WorkingWithLocationData.GeofenceTransitionService"
+            android:exported="false"></service>
+
+        <activity android:name=".Chapter123.Chapter7_WorkingWithLocationData.IntegratingLocationDataWithMaps_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
