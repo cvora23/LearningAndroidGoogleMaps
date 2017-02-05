@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "770856554614",
+    "firebase_url": "https://fir-test1-ea9ec.firebaseio.com",
+    "project_id": "fir-test1-ea9ec",
+    "storage_bucket": "fir-test1-ea9ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770856554614:android:cfd4db53053b51d8",
+        "android_client_info": {
+          "package_name": "cvora.firebasetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770856554614-solsbaprdodei57bhg7d64b091hc3986.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACVyoI4pbd9GJKns7qMNy021ocUUcJ6RU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SafeKidTestServer</string>
+    <string name="action_settings">Settings</string>
+    <string name="route1_simulate">Simulate Route 1</string>
+    <string name="route2_simulate">Simulate Route 2</string>
+    <string name="route3_simulate">Simulate Route 3</string>
+</resources>

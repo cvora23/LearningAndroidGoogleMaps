@@ -23,5 +23,6 @@ public class AddingMapsProgramatically extends Activity {
         fragmentTransaction.add(R.id.content_frame,mapFragment);
         fragmentTransaction.commit();
 
+
     }
 }

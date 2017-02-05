@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cvora.googledirectionsapitest.profile.DriverList"
+    android:scrollbars="none"
+    android:layout_weight="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"></include>
+
+        <ImageView
+            android:id="@+id/driver1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/drive_profile"/>
+        <include layout="@layout/item_divider" />
+        <ImageView
+            android:id="@+id/driver2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/drive_profile"/>
+        <include layout="@layout/item_divider" />
+        <ImageView
+            android:id="@+id/driver3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/drive_profile"/>
+        <include layout="@layout/item_divider" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -49,9 +49,9 @@
         <activity android:name=".Chapter123.UsingCallBackMethodForMap" />
         <activity android:name=".Chapter123.DisplayDiffTypesOfMaps" />
         <activity android:name=".Chapter123.MapLiteMode" />
-        <activity android:name=".Chapter123.Chapter4.AddingMarkerToMap" />
-        <activity android:name=".Chapter123.Chapter4.CreateInfoWindowForMarkerOnMap" />
-        <activity android:name=".Chapter123.Chapter4.PolylinePolygonCircleShapesOnMap" />
+        <activity android:name=".Chapter123.Chapter4_AddingInfoToMaps.AddingMarkerToMap" />
+        <activity android:name=".Chapter123.Chapter4_AddingInfoToMaps.CreateInfoWindowForMarkerOnMap" />
+        <activity android:name=".Chapter123.Chapter4_AddingInfoToMaps.PolylinePolygonCircleShapesOnMap" />
         <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.MapUIControlsActivity" />
         <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.MapUiControlCustomApplication" />
         <activity android:name=".Chapter123.Chapter5_InteractingWithMaps.UI_Controls_Gestures_Using_XML" />

@@ -5,4 +5,4 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cvora.learningandroidgooglemaps.Chapter123.Chapter4.AddingMarkerToMap" />
+    tools:context="cvora.learningandroidgooglemaps.Chapter123.Chapter4_AddingInfoToMaps.AddingMarkerToMap" />

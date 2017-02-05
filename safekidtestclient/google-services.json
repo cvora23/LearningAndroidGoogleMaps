@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "732099914634",
+    "project_id": "safekidtest"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732099914634:android:ee4ed3522501e418",
+        "android_client_info": {
+          "package_name": "cvora.safekidtestclient"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArpYbEMI7l6jcthRjUCmkEpHctHvyAEgw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
